@@ -10,30 +10,36 @@ import Foundation
 
 public struct ColorScheme
 {
-    public let hue : Color
+    /// Base color
+    public let color : Color
+    
+    public init(_ color: Color)
+    {
+        self.color = color
+    }
     
     public var lightest : Color
     {
-        return hue.tinted(0.8).named("Lightest \(hue.name)")
+        return color.tinted(0.8).named("Lightest \(color.name)")
     }
     
     public var lighter : Color
     {
-        return hue.tinted(0.2).named("Lighter \(hue.name)")
+        return color.tinted(0.2).named("Lighter \(color.name)")
     }
     
     public var darker : Color
     {
-        return hue.toned(0.2).named("Darker \(hue.name)")
+        return color.toned(0.2).named("Darker \(color.name)")
     }
 
     public var darkest : Color
     {
-        return hue.shaded(0.2).named("Darkest \(hue.name)")
+        return color.shaded(0.2).named("Darkest \(color.name)")
     }
     
     public var hues : [Color]
     {
-        return [lightest, lighter, hue, darker, darkest]
+        return [lightest, lighter, color, darker, darkest]
     }
 }
