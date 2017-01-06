@@ -10,6 +10,8 @@ import Foundation
 
 public struct ColorScheme
 {
+    // see https://www.viget.com/articles/tints-tones-shades
+    
     /// Base color
     public let color : Color
     
