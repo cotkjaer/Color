@@ -26,9 +26,9 @@ class SchemeViewController: UIViewController
             return y1 < y2
         }
         
-        let colors = ColorScheme(hue: color).colors.reversed()
+        let colors = ColorScheme(color).hues
         
-        for (index, label) in colorLabels.enumerated()
+        for (index, label) in colorLabels.reversed().enumerated()
         {
             label.superview?.backgroundColor = colors[index].uiColor
             

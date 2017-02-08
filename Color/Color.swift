@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 public struct Color
 {
     static var colorsByName = Dictionary<String, Color>()
@@ -82,5 +81,9 @@ public struct Color
     public static let black = Color(0x000000, "Black")
     public static let white = Color(0xFFFFFF, "White")
     public static let grey = Color(0x7F7F7F, "Grey")
+    
+    public static let gold = Color(0xFFD700, "Gold")
+    public static let silver = Color(0xC0C0C0, "Silver")
+    public static let bronze = Color(0xCD7F32, "Bronze")
 }
 

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Silverback IT. All rights reserved.
 //
 
+import Foundation
 import XCTest
 @testable import Color
 
@@ -135,5 +136,57 @@ class ColorTests: XCTestCase
         XCTAssertEqual(ruby.r, 0xC0)
         XCTAssertEqual(ruby.g, 0x2F)
         XCTAssertEqual(ruby.b, 0x1D)
+    }
+    
+    class ColorContainer: NSObject, NSCoding
+    {
+        var color: Color
+        var value: Int
+        
+        init(color: Color, value: Int)
+        {
+            self.color = color
+            self.value = value
+        }
+        
+        required convenience init?(coder decoder: NSCoder)
+        {
+            guard let color = decoder.decodeColor(forKey: "color") else { return nil }
+            
+            self.init(color: color, value: decoder.decodeInteger(forKey: "value"))
+        }
+        
+        func encode(with coder: NSCoder)
+        {
+            coder.encode(color: color, forKey: "color")
+            coder.encode(value, forKey: "value")
+        }
+    }
+    
+    func test_settings()
+    {
+        let ruby = Color.ruby
+        let settings = UserDefaults.standard
+        
+        settings.set(ruby, forKey: "color")
+        
+        let c = settings.color(forKey: "color")
+        
+        XCTAssertNotNil(c)
+        
+        XCTAssertEqual(ruby, c)
+        
+        let colorContainers = [ColorContainer(color: Color.ruby, value: 90),
+                               ColorContainer(color: .amber, value: -10)]
+        
+        settings.set(values: colorContainers, forKey: "colors")
+        
+        let cs: [ColorContainer] = settings.values(forKey: "colors")
+        
+        XCTAssertNotNil(cs)
+        XCTAssertEqual(cs.count, colorContainers.count)
+        
+        XCTAssertEqual(colorContainers.map{$0.color}, cs.map{$0.color})
+        
     }
 }

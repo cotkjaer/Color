@@ -17,6 +17,8 @@
 		8F07E21D1DC367BA0078BC6B /* Color+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07E21C1DC367BA0078BC6B /* Color+Hashable.swift */; };
 		8F07E21F1DC376900078BC6B /* Color+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07E21E1DC376900078BC6B /* Color+Random.swift */; };
 		8F07E2211DC377590078BC6B /* Color+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F07E2201DC377590078BC6B /* Color+Equatable.swift */; };
+		8F368C201E3B3AC7002D881C /* NSCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F368C1F1E3B3AC7002D881C /* NSCoder.swift */; };
+		8F368C221E3B3CBE002D881C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F368C211E3B3CBE002D881C /* UserDefaults.swift */; };
 		8F8C9A961DC22EF100C4D291 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C9A8C1DC22EF100C4D291 /* Color.framework */; };
 		8F8C9A9B1DC22EF100C4D291 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C9A9A1DC22EF100C4D291 /* ColorTests.swift */; };
 		8F8C9A9D1DC22EF100C4D291 /* Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F8C9A8F1DC22EF100C4D291 /* Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +33,9 @@
 		8F8C9ACF1DC2406500C4D291 /* SchemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F8C9ACE1DC2406500C4D291 /* SchemeViewController.swift */; };
 		8F8C9AD01DC243A800C4D291 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C9A8C1DC22EF100C4D291 /* Color.framework */; };
 		8F8C9AD11DC243A800C4D291 /* Color.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C9A8C1DC22EF100C4D291 /* Color.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8FC63D6F1E23B072005711D9 /* ColorPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC63D6D1E23B072005711D9 /* ColorPickerViewController.swift */; };
+		8FC63D741E23B87B005711D9 /* Picker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FC63D731E23B87B005711D9 /* Picker.storyboard */; };
+		8FC63D761E23B8FD005711D9 /* PickerAwareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC63D751E23B8FD005711D9 /* PickerAwareViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,8 @@
 		8F07E21C1DC367BA0078BC6B /* Color+Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Hashable.swift"; sourceTree = "<group>"; };
 		8F07E21E1DC376900078BC6B /* Color+Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Random.swift"; sourceTree = "<group>"; };
 		8F07E2201DC377590078BC6B /* Color+Equatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Equatable.swift"; sourceTree = "<group>"; };
+		8F368C1F1E3B3AC7002D881C /* NSCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCoder.swift; sourceTree = "<group>"; };
+		8F368C211E3B3CBE002D881C /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8F8C9A8C1DC22EF100C4D291 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F8C9A8F1DC22EF100C4D291 /* Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Color.h; sourceTree = "<group>"; };
 		8F8C9A901DC22EF100C4D291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +108,9 @@
 		8F8C9AC51DC2401800C4D291 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F8C9ACC1DC2405500C4D291 /* Scheme.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Scheme.storyboard; sourceTree = "<group>"; };
 		8F8C9ACE1DC2406500C4D291 /* SchemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemeViewController.swift; sourceTree = "<group>"; };
+		8FC63D6D1E23B072005711D9 /* ColorPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorPickerViewController.swift; sourceTree = "<group>"; };
+		8FC63D731E23B87B005711D9 /* Picker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Picker.storyboard; sourceTree = "<group>"; };
+		8FC63D751E23B8FD005711D9 /* PickerAwareViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerAwareViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +183,9 @@
 				8F07E2141DC362550078BC6B /* Color+Tint.swift */,
 				8F07E2181DC365700078BC6B /* Color+Tone.swift */,
 				8F07E2121DC361FE0078BC6B /* ColorScheme.swift */,
+				8FC63D6D1E23B072005711D9 /* ColorPickerViewController.swift */,
+				8F368C1F1E3B3AC7002D881C /* NSCoder.swift */,
+				8F368C211E3B3CBE002D881C /* UserDefaults.swift */,
 				8F8C9A901DC22EF100C4D291 /* Info.plist */,
 			);
 			path = Color;
@@ -196,6 +209,8 @@
 				8F8C9AB21DC2401800C4D291 /* Main.storyboard */,
 				8F8C9ACC1DC2405500C4D291 /* Scheme.storyboard */,
 				8F8C9ACE1DC2406500C4D291 /* SchemeViewController.swift */,
+				8FC63D731E23B87B005711D9 /* Picker.storyboard */,
+				8FC63D751E23B8FD005711D9 /* PickerAwareViewController.swift */,
 				8F8C9AB51DC2401800C4D291 /* Assets.xcassets */,
 				8F8C9AB71DC2401800C4D291 /* LaunchScreen.storyboard */,
 				8F8C9ABA1DC2401800C4D291 /* Info.plist */,
@@ -306,7 +321,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Silverback IT";
 				TargetAttributes = {
 					8F8C9A8B1DC22EF100C4D291 = {
@@ -373,6 +388,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8FC63D741E23B87B005711D9 /* Picker.storyboard in Resources */,
 				8F8C9AB91DC2401800C4D291 /* LaunchScreen.storyboard in Resources */,
 				8F8C9AB61DC2401800C4D291 /* Assets.xcassets in Resources */,
 				8F8C9AB41DC2401800C4D291 /* Main.storyboard in Resources */,
@@ -398,7 +414,10 @@
 				8F07E2131DC361FE0078BC6B /* ColorScheme.swift in Sources */,
 				8F07E2151DC362550078BC6B /* Color+Tint.swift in Sources */,
 				8F07E20F1DC345A40078BC6B /* Color+Mix.swift in Sources */,
+				8F368C221E3B3CBE002D881C /* UserDefaults.swift in Sources */,
+				8FC63D6F1E23B072005711D9 /* ColorPickerViewController.swift in Sources */,
 				8F07E21F1DC376900078BC6B /* Color+Random.swift in Sources */,
+				8F368C201E3B3AC7002D881C /* NSCoder.swift in Sources */,
 				8F8C9AA71DC22EFE00C4D291 /* Color.swift in Sources */,
 				8F07E2171DC363EC0078BC6B /* Color+Name.swift in Sources */,
 				8F07E2111DC348B20078BC6B /* Color+Shade.swift in Sources */,
@@ -423,6 +442,7 @@
 				8F8C9ACF1DC2406500C4D291 /* SchemeViewController.swift in Sources */,
 				8F8C9AB11DC2401800C4D291 /* ViewController.swift in Sources */,
 				8F8C9AAF1DC2401800C4D291 /* AppDelegate.swift in Sources */,
+				8FC63D761E23B8FD005711D9 /* PickerAwareViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +512,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -545,6 +566,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

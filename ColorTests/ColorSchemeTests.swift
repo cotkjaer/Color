@@ -14,7 +14,7 @@ class ColorSchemeTests: XCTestCase
 {
     func test_kelly_color_scheme()
     {
-        let scheme = ColorScheme(hue: .kelly)
+        let scheme = ColorScheme(.kelly)
         
         XCTAssertEqual(scheme.hues.count, 5)
         
