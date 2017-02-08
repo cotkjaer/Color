@@ -15,12 +15,12 @@ extension Color
     // Mix color with a percent of grey (7F7F7F)
     public mutating func tone(_ percent: Float)
     {
-        mix(withPercent: min(1,max(percent, 0)), color: .white)
+        mix(withPercent: min(1,max(percent, 0)), color: .grey)
     }
     
     // Mix color with a percent of grey (7F7F7F)
     public func toned(_ percent: Float) -> Color
     {
-        return mixed(withPercent: min(1,max(percent, 0)), color: .white)
+        return mixed(withPercent: min(1,max(percent, 0)), color: .grey)
     }
 }
