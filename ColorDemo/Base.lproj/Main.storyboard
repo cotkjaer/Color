@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pBa-Ik-fd5">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="pBa-Ik-fd5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -21,6 +21,7 @@
                     <connections>
                         <segue destination="uZN-x0-2jG" kind="relationship" relationship="viewControllers" id="OIn-hE-Goc"/>
                         <segue destination="fRm-vP-YUV" kind="relationship" relationship="viewControllers" id="awZ-1J-qxl"/>
+                        <segue destination="wgo-Wu-aDc" kind="relationship" relationship="viewControllers" id="KDj-Al-vb2"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFu-kM-zkb" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -31,21 +32,31 @@
         <scene sceneID="cue-ay-ZEP">
             <objects>
                 <viewControllerPlaceholder storyboardName="Picker" id="fRm-vP-YUV" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="7dw-Zb-2za"/>
+                    <tabBarItem key="tabBarItem" title="Picker" id="7dw-Zb-2za"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YwF-hh-Gk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-570" y="-376"/>
+            <point key="canvasLocation" x="-515" y="-377"/>
         </scene>
         <!--Scheme-->
         <scene sceneID="Q3C-ff-OFH">
             <objects>
                 <viewControllerPlaceholder storyboardName="Scheme" id="uZN-x0-2jG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="lRm-dg-6a6"/>
+                    <tabBarItem key="tabBarItem" title="Scheme" id="lRm-dg-6a6"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aX7-8V-kAR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-506" y="-272"/>
+        </scene>
+        <!--Palette-->
+        <scene sceneID="Ufa-wU-FCV">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Palette" id="wgo-Wu-aDc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Palette" id="gau-Nr-qfy"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2C-GF-wQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-511" y="-183"/>
         </scene>
     </scenes>
 </document>

@@ -43,7 +43,7 @@ extension UserDefaults
     {
         guard let datas: [Data] = array(forKey: key) as! [Data]? else { return [] }
         
-        return datas.flatMap { NSKeyedUnarchiver.unarchiveObject(with: $0) as? T }
+        return datas.compactMap { NSKeyedUnarchiver.unarchiveObject(with: $0) as? T }
     }
     
     ///TODO: move to general Defaults framework
