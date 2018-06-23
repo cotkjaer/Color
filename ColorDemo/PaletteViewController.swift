@@ -29,7 +29,7 @@ extension Array
 class PaletteViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
 
-    let palette = ColorPalette.basic
+    var palette = ColorPalette.Basic { didSet { collectionView?.reloadData() } }
     
     override func viewDidLoad() {
         super.viewDidLoad()

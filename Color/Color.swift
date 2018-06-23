@@ -85,5 +85,28 @@ public struct Color
     public static let gold = Color(0xFFD700, "Gold")
     public static let silver = Color(0xC0C0C0, "Silver")
     public static let bronze = Color(0xCD7F32, "Bronze")
+    
+    //Colors in palettes, from https://www.canva.com/learn/brand-color-palette/
+    
+    public static let glass = Color(0xEDFAFD, "Glass")
+    public static let chill = Color(0xAED9DA, "Chill")
+    public static let californianCoral = Color(0x3DDAD7, "Californian Coral")
+    public static let bondiBlue = Color(0x2A93D5, "Bondi Blue")
+    public static let marina = Color(0x135589, "Marina")
+  
+    public static let sheer = Color(0xC5D2DB, "Sheer")
+    public static let shutterBlue = Color(0x2096BA, "Shutter Blue")
+    public static let papayaWhip = Color(0xE7B183, "Papaya Whip")
+    public static let puce = Color(0xC5919D, "Puce")
+    public static let terracotta = Color(0xDF6E21, "Terracotta")
+    
+    public static let tropicalPink = Color(0xF5AB99, "Tropical Pink")
+    public static let liquidSunset = Color(0xFEB47B, "Liquid Sunset")
+    public static let heatwave = Color(0xFF7e5f, "HeatWave")
+    public static let paradise = Color(0x765285, "Paradise")
+    public static let nightfall = Color(0x351c4d, "Nightfall")
+    
+//    public static let <#name#> = Color(0x<#value#>, "<#name#>")
+
 }
 

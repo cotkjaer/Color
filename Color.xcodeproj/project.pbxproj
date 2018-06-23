@@ -20,6 +20,8 @@
 		8F22F10720DE2800009CDB3D /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22F10620DE2800009CDB3D /* ColorPalette.swift */; };
 		8F22F10920DE2AC4009CDB3D /* Palette.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F22F10820DE2AC4009CDB3D /* Palette.storyboard */; };
 		8F22F10B20DE2AF7009CDB3D /* PaletteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22F10A20DE2AF7009CDB3D /* PaletteViewController.swift */; };
+		8F22F10E20DE3B29009CDB3D /* PalettePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22F10D20DE3B29009CDB3D /* PalettePickerViewController.swift */; };
+		8F22F11220DE3CB6009CDB3D /* PalettePickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F22F11120DE3CB6009CDB3D /* PalettePickerCell.swift */; };
 		8F368C201E3B3AC7002D881C /* NSCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F368C1F1E3B3AC7002D881C /* NSCoder.swift */; };
 		8F368C221E3B3CBE002D881C /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F368C211E3B3CBE002D881C /* UserDefaults.swift */; };
 		8F8C9A961DC22EF100C4D291 /* Color.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8C9A8C1DC22EF100C4D291 /* Color.framework */; };
@@ -93,6 +95,8 @@
 		8F22F10620DE2800009CDB3D /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		8F22F10820DE2AC4009CDB3D /* Palette.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Palette.storyboard; sourceTree = "<group>"; };
 		8F22F10A20DE2AF7009CDB3D /* PaletteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteViewController.swift; sourceTree = "<group>"; };
+		8F22F10D20DE3B29009CDB3D /* PalettePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalettePickerViewController.swift; sourceTree = "<group>"; };
+		8F22F11120DE3CB6009CDB3D /* PalettePickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PalettePickerCell.swift; sourceTree = "<group>"; };
 		8F368C1F1E3B3AC7002D881C /* NSCoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSCoder.swift; sourceTree = "<group>"; };
 		8F368C211E3B3CBE002D881C /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		8F8C9A8C1DC22EF100C4D291 /* Color.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Color.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -218,6 +222,8 @@
 				8F8C9ACE1DC2406500C4D291 /* SchemeViewController.swift */,
 				8FC63D731E23B87B005711D9 /* Picker.storyboard */,
 				8F22F10820DE2AC4009CDB3D /* Palette.storyboard */,
+				8F22F10D20DE3B29009CDB3D /* PalettePickerViewController.swift */,
+				8F22F11120DE3CB6009CDB3D /* PalettePickerCell.swift */,
 				8F22F10A20DE2AF7009CDB3D /* PaletteViewController.swift */,
 				8FC63D751E23B8FD005711D9 /* PickerAwareViewController.swift */,
 				8F8C9AB51DC2401800C4D291 /* Assets.xcassets */,
@@ -453,7 +459,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F22F10E20DE3B29009CDB3D /* PalettePickerViewController.swift in Sources */,
 				8F8C9ACF1DC2406500C4D291 /* SchemeViewController.swift in Sources */,
+				8F22F11220DE3CB6009CDB3D /* PalettePickerCell.swift in Sources */,
 				8F22F10B20DE2AF7009CDB3D /* PaletteViewController.swift in Sources */,
 				8F8C9AB11DC2401800C4D291 /* ViewController.swift in Sources */,
 				8F8C9AAF1DC2401800C4D291 /* AppDelegate.swift in Sources */,

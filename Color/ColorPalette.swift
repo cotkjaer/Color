@@ -11,13 +11,15 @@ import Foundation
 open class ColorPalette
 {
     open let colors: [Color]
+    open let name: String
     
-    public init(colors: [Color])
+    public init(name: String, colors: [Color])
     {
+        self.name = name
         self.colors = colors
     }
     
-    static public let basic = ColorPalette(colors: [
+    static public let Basic = ColorPalette(name: "Basic", colors: [
         Color(r: 251, g: 207, b: 062),
         Color(r: 238, g: 155, b: 057),
         Color(r: 226, g: 103, b: 051),
@@ -38,4 +40,13 @@ open class ColorPalette
         Color(r: 144, g: 151, b: 155),
         Color(r: 084, g: 093, b: 098)
         ])
+    
+    static public let WaimeaWaters = ColorPalette(name: "Waimea Waters", colors: [Color.glass, Color.chill, Color.californianCoral, Color.bondiBlue, Color.marina])
+    
+    static public let RichAndAdventurous = ColorPalette(name: "Rich and Adventurous", colors: [.sheer, .shutterBlue, .papayaWhip, .puce, .terracotta])
+    
+    static public let TropicalPunch = ColorPalette(name: "Tropical Punch", colors: [.tropicalPink, .liquidSunset, .heatwave, .paradise, .nightfall])
+    
+    
+    static public let all: [ColorPalette] = [ColorPalette.Basic, ColorPalette.WaimeaWaters, .RichAndAdventurous, .TropicalPunch]
 }
